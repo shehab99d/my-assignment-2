@@ -141,12 +141,24 @@ nav ul li a{
         padding: 10px 20px;
     }
     .first-section-h1{
-        font-size: 35px;
+        font-size: 32px;
         font-weight: 700;
         margin-top: 0px;
         align-items: center;
         text-align: center;
-    }
+    } 
+    .first-section-p{
+        align-items: center;
+        text-align: center;
+        font-size: 14px;
+    }  
+    .first-section-button{
+        font-size: 14px;
+        padding: 6px 24px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    } 
     .hero-image{
         width: 340px;
        display: block;
