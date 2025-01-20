@@ -97,6 +97,31 @@ nav ul li a{
     cursor: pointer;
 }
 
+/* scroling text */
+.scroll{
+    width: 100%;
+      overflow: hidden;
+      white-space: nowrap;
+      text-align: center;
+      align-items: center;
+      border: 2px solid black;
+      margin-top: 20px;
+      background-color: orange;
+      font-size: 20px;
+}
+   .scroll span{
+    display: inline-block;
+    animation: scroll-right 10s linear infinite;
+   }
+   @keyframes scroll-right {
+    0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(100%);
+      }
+   }
+
 
 /* Responsive for mobile devices */
 @media screen and (max-width:576px) {
@@ -154,7 +179,7 @@ nav ul li a{
     }  
     .first-section-button{
         font-size: 14px;
-        padding: 6px 24px;
+        padding: 10px 24px;
         display: block;
         margin-left: auto;
         margin-right: auto;
@@ -188,5 +213,9 @@ nav ul li a{
         margin-right: 20px;
         font-size: 15px;
     }
+    .first-section{
+        display: grid;
+        grid-template-columns: 1, 1fr;
 
+    }
 }
