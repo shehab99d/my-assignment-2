@@ -4,21 +4,37 @@
     font-style: normal;
 }
 
+.margin{
+    margin-left: 141px;
+    margin-right: 141px;
+}
+
 
 /* Styles of navigation bar */
 .navigation{
     display: flex;
     justify-content: space-between;
     margin: 26px 141px 26px 141px;
+    align-items: center;
     
+
+}
+.frirst-assets-logo{
+    width: 80px;
+    height: 80px;
+    align-items: center;
+}
+.first-h1{
+    margin-left: 11px;
+    font-size: 2rem;
 
 }
 nav{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    
+    align-items: center; 
 }
+
 nav ul{
     display: flex;
     list-style: none;
@@ -36,6 +52,7 @@ nav ul li a{
     background-color: orange;
     border-radius: 12px;
     border: none;
+    cursor: pointer;
 }
 .first-ul{
     font-size: 1.25rem;
@@ -48,8 +65,48 @@ nav ul li a{
     display: none;
 }
 
+/* First section styles */
+.first-section{
+    border: 80vh;
+    display: flex;
+    justify-content: space-between;
+}
+.section-container{
+    padding: 50px;
+}
+
+.first-section-h1{
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    
+}
+.first-section-p{
+    font-size: 1.25rem;
+    margin-top: -10px;
+}
+.first-section-button{
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: white;
+    gap: 5px;
+    padding: 10px 47px;
+    background-color: black;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
 /* Responsive for mobile devices */
 @media screen and (max-width:576px) {
+    br {
+        display: none;
+    }
+    nav{
+        border-bottom: 1px solid orange;
+        height: 90px;
+    }
     .first-ul{
         display: none;
     }
@@ -67,6 +124,34 @@ nav ul li a{
     }
     .first-humbarg-image{
         display: block;
+    }
+    .first-section{
+        margin: 0 10px;
+    }
+    .first-section{
+        display: grid;
+        grid-template-columns: 1, 1fr;
+    }
+    .first-section img{
+        order: 1;
+
+    }
+    .section-container{
+        order: 2;
+        padding: 10px 20px;
+    }
+    .first-section-h1{
+        font-size: 35px;
+        font-weight: 700;
+        margin-top: 0px;
+        align-items: center;
+        text-align: center;
+    }
+    .hero-image{
+        width: 340px;
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
     }
     
 }
