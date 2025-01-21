@@ -149,6 +149,31 @@ nav ul li a{
 .container-image{
     padding-top: 62px;
 }
+.aro-button{
+    text-align: center;
+   
+  
+
+}
+ .button-left{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: none;
+    font-size: 1.70rem;
+    margin-right: 10px;
+    color: white;
+    background-color: orange;
+ }
+ .button-right{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: none;
+    font-size: 1.70rem;
+    color: white;
+    background-color: orange;
+ }
 
 /* scroling text */
 .scroll{
@@ -180,6 +205,9 @@ nav ul li a{
 
 /* Responsive for mobile devices */
 @media screen and (max-width:576px) {
+    .aro-button{
+        display: none;
+    }
     br {
         display: none;
     }
