@@ -481,6 +481,9 @@ footer{
         margin-right: 10px;
         margin: 0 auto;
     }
+    .image{
+        width: 100%;
+    }
     .our-stories-head{
         font-size: 40px;
         margin-bottom: 0%;
