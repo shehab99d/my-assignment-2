@@ -3,6 +3,11 @@
     font-weight: 400;
     font-style: normal;
 }
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
 
 .margin{
     margin-left: 141px;
@@ -98,8 +103,13 @@ nav ul li a{
 }
 
 /* main 2 part */
-.bg-img{
-    background-image: url(../assets/bg.png);
+.bkg-img{
+    background: 
+    linear-gradient(to top, #ffe7bf 30%, white 40%),
+
+    url("../assets/bg.png");
+background-size: cover; 
+background-position: center;
 }
 /* section three style */
 .standard-h1{
@@ -175,6 +185,181 @@ nav ul li a{
     background-color: orange;
  }
 
+ /* five stories */
+ .our-stories{
+   
+    
+ }
+ .our-stories-one{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 150px;
+    margin-bottom: 100px;
+
+ }
+ .story-one{
+    /* border: 1px solid gray; */
+    background-color: white;
+    border-radius: 20px;
+    
+ }
+ .image{
+    width: 430px;
+    border-top-left-radius: 20px; 
+    border-top-right-radius: 20px; 
+    border-bottom-left-radius: 0; 
+    border-bottom-right-radius: 0;
+    margin-bottom: -30px;
+ }
+ 
+
+ 
+.five-stories{
+    display: flex;
+    margin-top: 80px;
+    justify-content: space-between;
+}
+.section-four-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+.section-number-four{
+    background-color: white;
+    /* border: 1px solid black; */
+    border-radius: 30px;
+    margin-left: 65px;
+    width: 1000px;
+}
+.section-four-container{
+    margin-left: 130px;
+}
+
+
+.img-story-one{
+    border-top-left-radius: 20px; 
+    border-top-right-radius: 20px; 
+    border-bottom-left-radius: 0; 
+    border-bottom-right-radius: 0;
+    margin-bottom: -30px;
+}
+.story-one-btn{
+    font-size: 1rem;
+    padding: 14px 20px;
+    border-radius: 47px;
+    color: white;
+    background-color: #3CD8E8;
+    border: none;
+    margin-left: 40px;
+    margin-bottom: -200px;
+}
+.story-one-h3{
+     font-size: 1.75rem;
+     margin-top: 36px;
+     margin-bottom: 47px;
+     padding-left: 40px;
+}
+.story-one-p{
+     padding: 10px 40px;
+     color: #666666;
+}
+.h2{
+  padding-left: 30px;
+  padding-bottom: 40px;
+  padding-top: 30px;
+}
+.btn{
+    font-size: 1rem;
+    padding: 14px 20px;
+    border-radius: 47px;
+    color: white;
+    background-color: #3CD8E8;
+    border: none;
+    margin-left: 40px;
+    margin-bottom: -200px;
+}
+.button-button1{
+    margin-top: 140px;
+    margin-bottom: 100px;
+    text-align: center;
+    
+
+}
+.button-button{
+    padding: 16px 81px;
+    color: white;
+    background-color:black;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 120px;
+}
+/* footer */
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color:
+    rgb(17, 16, 16);
+    margin-top: 90px;
+}
+.footer-first-h2{
+     font-size: 2.3rem;
+     color: white;
+     margin-left: 1px;
+}
+.last-logo-image{
+    width: 90px;
+    height: 90px;
+}
+
+.last-div-one{
+    display: flex;
+    align-items: center;
+    
+}
+.footer-first-div{
+    padding-top:123px;
+    padding-left: 100px;
+    padding-bottom: 180px;
+}
+.first-div-p{
+    font-size: 1.25rem;
+    color: white;
+    margin-top: 35px;
+}
+.second-last-div{
+    color: white;
+   
+}
+.second-last-div ul li{
+    text-decoration: none;
+    list-style: none;
+    margin-bottom: 9px;
+}
+.last-h1{
+    color: white;
+}
+.second-last-div{
+    padding-top: 123px;
+    text-align: center;
+    
+}
+.last-h1{
+   padding-top: 123px;
+}
+.four-images{
+    padding-top: -50px;
+}
+
+.last-div{
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
+   gap: 0px;
+}
+
+
+
 /* scroling text */
 .scroll{
     width: 100%;
@@ -187,6 +372,7 @@ nav ul li a{
       background-color: rgb(255, 242, 219);
       font-size: 20px;
 }
+
 
 
    .scroll span{
@@ -282,7 +468,67 @@ nav ul li a{
         display: grid;
         grid-template-columns: 1, 1fr;
     }
-    
+    .section-number-four{
+        display: none;
+    }
+    .section-four-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 0%;
+    }
+    .five-stories{
+        margin-left: 10px;
+        margin-right: 10px;
+        margin: 0 auto;
+    }
+    .our-stories-head{
+        font-size: 40px;
+        margin-bottom: 0%;
+    }
+    .our-stories-one{
+        margin: 40px;
+    }
+    .button-button{
+       margin: 30px;
+    }
+    .button-button1{
+        margin: 30px;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .footer-first-div{
+        padding: 20px 20px;
+    }
+    .last-logo-image{
+        width: 50px;
+        height: 50px;
+    }
+    .footer-first-h2{
+        font-size: 30px;
+        margin-left: 25px;
+    }
+    .first-div-p{
+        padding-top: 20px;
+        font-size:14px;
+        margin-top: 5px;
+    }
+    .second-last-div{
+        padding-top: 30px;
+    }
+    .second-last-h1{
+        font-size: 30px;
+    }
+    .last-h1{
+        padding-top: 25px;
+        font-size: 25px;
+        
+    }
+    .last-div{
+        text-align: center;
+        align-items: center;
+    }
 }
 
 /* Responsive for tablate */
@@ -323,5 +569,62 @@ nav ul li a{
         grid-template-columns: repeat(2, 1fr);
 
     }
-    
+    .section-number-four{
+        display: none;
+
+    }
+    .five-stories{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 15px 10px;
+    }
+    .section-four-container{
+        margin: 10px 15px;
+        margin: 0 auto;
+    }
+    .footer-first-div{
+        padding: 15px 13px;
+        
+    }
+    .last-logo-image{
+        width: 60px;
+        height: 60px;
+    }
+    .footer-first-h2{
+        font-size: 20px;
+    }
+    .first-div-p{
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    .second-last-div{
+        padding-top: 15px ;
+        display: block;
+       margin-left: auto;
+       margin-right: auto;
+    }
+    .second-last-h1{
+        font-size: 20px;
+    }
+    .last-ul li{
+        font-size: 12px;
+    }
+    .last-h1{
+        padding-top: 15px;
+        font-size: 20px;
+    }
+    .four-images img{
+        width: 25px;
+        height: 25px;
+    }
+    footer{
+       display: flex;
+       justify-content: space-around;
+       
+    }
+    .last-div{
+        display: block;
+       margin-left: auto;
+       margin-right: auto;
+    }
 }
