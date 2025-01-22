@@ -383,13 +383,13 @@ footer{
    }
    @keyframes scroll-right {
     0% {
-        transform: translateX(-100%);
-      }
-      100% {
         transform: translateX(100%);
       }
+      100% {
+        transform: translateX(-100%);
+      }
+      
    }
-
 
 /* Responsive for mobile devices */
 @media screen and (max-width:576px) {
